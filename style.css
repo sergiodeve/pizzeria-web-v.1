@@ -1,0 +1,342 @@
+/* GENERALES */
+*{ box-sizing: border-box;}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 238, 238);
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-size: 1.7rem;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.app-container{
+    overflow: hidden;
+    max-width: 1324px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* HEADER */
+.header{
+    display: flex;
+    align-items: center;
+    min-height: 120px;
+    background-color: rgb(44, 84, 184);
+    padding: 1rem 0rem;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0rem;
+}
+
+.telefono-2 a{
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(58, 195, 97);
+    padding: 1rem;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+}
+.telefono a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(58, 195, 97);
+    padding: 1rem;
+    border-radius: 4px;
+    -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+} 
+.telefono a:hover{
+    opacity: 0.8;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 580px){
+    .navegacion{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        
+
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .navegacion{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+}
+/* PRESENTATION */
+.presentacion{
+    min-width: 360px;
+    background-image: url('./img/main-img.jpg');
+    min-height: 500px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width:1400px) {
+    .presentacion{
+       max-width: 100%;
+    }
+}
+@media (max-width:880px) {
+    .presentacion{
+        background-image: url('./img/img-presentacion-mid.jpg');
+    }
+}
+.title-h1{
+    margin: 0;
+    padding: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgba(77, 77, 77, 0.326);
+    transition: 2s;
+    opacity: 1;
+}
+
+/* GALLERY */
+.carousel{
+    width: 86%;
+    background-color: white;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-container{
+   position: relative;
+}
+.carousel-lista{
+    
+}
+@media (max-width:580px) {
+    .carousel{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.button-siguiente, .button-anterior{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border:none;
+    border-radius: 5px;
+    z-index: 10;
+    top: calc(50% - 20px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    background-color: rgba(39, 129, 193, 0.578);
+}
+.button-anterior{
+    left: -45px;
+}
+
+.button-siguiente{
+    right: -45px;
+}
+
+@media(max-width: 700px){
+    .button-anterior{
+        left: -35px;
+    }
+    
+    .button-siguiente{
+        right: -35px;
+    }
+}
+
+/* SOCIAL MEDIA */
+.redes{
+    min-width: 360px;
+    text-align: center;
+    padding: 2rem 0rem;
+    background-color: rgb(53, 53, 53);
+    margin-bottom: 2rem;
+}
+.social-media-center{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instagram{
+    font-size: 70px;
+    color:rgb(147, 37, 169) ;
+    transition: 0.5s ease;
+}
+.facebook{
+    font-size: 70px;
+    color:rgb(45, 122, 185) ;
+    transition: 0.5s ease;
+}
+.instagram:hover{
+    transform: scale(1.1);
+    color: rgb(248, 248, 248);
+}
+
+.facebook:hover{
+    transform: scale(1.1);
+    color: rgb(248, 248, 248);
+}
+
+.social-media-i .uno{
+    color: red;
+}
+
+/* MAIN CONTENT SECTION */
+.main-content{
+    min-width: 360px;
+    max-width: 700px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 0rem;
+}
+.carta-container{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:1rem;
+}
+
+.carta-container h2{
+    color: black;
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+}
+
+.carta{
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.carta img{
+    width: 100%;
+}
+
+.ofertas{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('./img/bg-oferta-mid.jpg');
+    background-size: cover;
+    padding: 2rem 1rem;
+    border: 1px solid black;
+}
+
+.ofertas p{
+    color: grey;
+}
+.negrita{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media(max-width:1000px){
+    .ofertas{
+        background-image: url('./img/bg-oferta-mid.jpg');
+    }
+}
+
+/* CONTACTO */
+.contacto-info{
+    max-width: 700px;
+    min-width: 360px;
+    background-color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacto-info h2{
+    
+    color: black;
+    font-size: 2.1rem;
+    padding: 2rem 1rem;
+}
+.contacto-info p{
+    text-align: center;
+}
+.contacto-info i{
+    color: rgb(235, 58, 58);
+    font-size: 60px;
+} 
+  
+.mapa{
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer{
+    padding: 1rem;
+    min-height: 200px;
+    background-color: rgb(44, 84, 184);
+}
+
+footer .instagram, .facebook{
+    color: white;
+}
+
+@media(max-width:968px){
+    .app-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media(max-width:748px){
+    footer .social-media-center{
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+    }
+}
