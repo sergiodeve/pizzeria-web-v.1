@@ -70,6 +70,10 @@ h2{
 .telefono a:hover{
     opacity: 0.8;
 }
+
+.telefono-2 a:hover{
+    opacity: 0.8;
+}
 .logo img{
     width: 100px;
     height: 100px;
@@ -320,8 +324,13 @@ footer{
     background-color: rgb(44, 84, 184);
 }
 
-footer .instagram .facebook{
-    color: white;
+.instagram-f, .facebook-f{
+    font-size: 70px;
+    color:rgb(255, 255, 255) ;
+    transition: 0.5s ease;
+}
+.instagram-f:hover, .facebook-f:hover{
+    transform: scale(1.1);
 }
 
 @media(max-width:968px){
