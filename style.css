@@ -4,7 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(231, 231, 231);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -68,6 +68,10 @@ h2{
     box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
 } 
 .telefono a:hover{
+    opacity: 0.8;
+}
+
+.telefono-2 a:hover{
     opacity: 0.8;
 }
 .logo img{
@@ -320,8 +324,13 @@ footer{
     background-color: rgb(44, 84, 184);
 }
 
-footer .instagram .facebook{
-    color: white;
+.instagram-f, .facebook-f{
+    font-size: 70px;
+    color:rgb(255, 255, 255) ;
+    transition: 0.5s ease;
+}
+.instagram-f:hover, .facebook-f:hover{
+    transform: scale(1.1);
 }
 
 @media(max-width:968px){
